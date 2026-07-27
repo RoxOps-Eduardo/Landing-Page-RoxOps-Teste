@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RoxOps — Onde a escala do seu negócio começa na estrutura</title>
+<meta name="description" content="A RoxOps desenha, constrói e opera a estrutura comercial da sua empresa: agentes de IA no WhatsApp, CRM integrado e relatórios que mostram o que cada lead virou.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://roxops.com.br/">
+<meta property="og:title" content="RoxOps — Onde a escala do seu negócio começa na estrutura">
+<meta property="og:description" content="Agentes de IA no WhatsApp, CRM integrado e relatórios de operação. Estrutura comercial que não deixa lead esfriar.">
+<meta name="theme-color" content="#5B21D6">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%235B21D6'/%3E%3Cpath d='M9 23V9h7a4.2 4.2 0 0 1 1.2 8.2L21 23h-3.6l-3.2-5.4H12V23H9Zm3-8h3.6a1.9 1.9 0 0 0 0-3.8H12V15Z' fill='%23fff'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topbar">
+  <a class="brand" href="#topo" aria-label="RoxOps, início">
+    <span class="brand__mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="7" fill="currentColor"/><path d="M9 23V9h7a4.2 4.2 0 0 1 1.2 8.2L21 23h-3.6l-3.2-5.4H12V23H9Zm3-8h3.6a1.9 1.9 0 0 0 0-3.8H12V15Z" fill="#fff"/></svg>
+    </span>
+    <span class="brand__word">RoxOps</span>
+  </a>
+  <nav class="topnav" aria-label="Seções">
+    <a href="#gargalo">O gargalo</a>
+    <a href="#estrutura">A estrutura</a>
+    <a href="#processo">Como entramos</a>
+    <a href="#quem">Para quem</a>
+  </nav>
+  <a class="btn btn--sm" href="#contato">Agendar diagnóstico</a>
+</header>
+
+<main id="conteudo">
+
+<!-- ─────────────────────────  HERO  ───────────────────────── -->
+<section class="hero" id="topo">
+  <div class="sheet">
+
+    <p class="eyebrow"><span class="tick"></span>Operação comercial para empresas que vivem de lead</p>
+
+    <h1 class="display">
+      Onde a escala do seu<br>negócio começa na
+      <span class="display__hi">estrutura<svg class="underscore" viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 70 2, 150 2, 298 6" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></span>
+    </h1>
+
+    <p class="lede">
+      Lead entra pelo WhatsApp a qualquer hora. A RoxOps constrói a esteira que
+      recebe, tria, qualifica, agenda e lembra — e devolve pra você o relatório
+      do que cada lead virou.
+    </p>
+
+    <div class="hero__cta">
+      <a class="btn" href="#contato">Agendar diagnóstico</a>
+      <a class="btn btn--ghost" href="#estrutura">Ver a esteira</a>
+    </div>
+
+    <!-- ───── SIGNATURE: esteira viva ───── -->
+    <figure class="flow" id="flow" aria-label="Esteira de atendimento: mensagem recebida, triagem, qualificação, agendamento, lembrete e confirmação">
+      <figcaption class="flow__cap">
+        <span class="mono">esteira_comercial.roxops</span>
+        <span class="flow__status mono" id="flowStatus" aria-live="polite">em operação</span>
+      </figcaption>
+
+      <div class="flow__track">
+        <svg class="flow__wire" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+          <path id="wirePath" d="M20 30 H980" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 7"/>
+          <circle class="flow__pulse" r="6" fill="currentColor">
+            <animateMotion dur="9s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+              <mpath href="#wirePath"/>
+            </animateMotion>
+          </circle>
+        </svg>
+
+        <ol class="flow__nodes">
+          <li class="node" data-step="0">
+            <span class="node__id mono">00</span>
+            <span class="node__dot" aria-hidden="true"></span>
+            <span class="node__label">Mensagem<br>chega</span>
+          </li>
+          <li class="node" data-step="1">
+            <span class="node__id mono">01</span>
+            <span class="node__dot" aria-hidden="true"></span>
+            <span class="node__label">Triagem</span>
+          </li>
+          <li class="node" data-step="2">
+            <span class="node__id mono">02</span>
+            <span class="node__dot" aria-hidden="true"></span>
+            <span class="node__label">Qualificação</span>
+          </li>
+          <li class="node" data-step="3">
+            <span class="node__id mono">03</span>
+            <span class="node__dot" aria-hidden="true"></span>
+            <span class="node__label">Agendamento</span>
+          </li>
+          <li class="node" data-step="4">
+            <span class="node__id mono">04</span>
+            <span class="node__dot" aria-hidden="true"></span>
+            <span class="node__label">Lembrete e<br>confirmação</span>
+          </li>
+        </ol>
+      </div>
+    </figure>
+
+  </div>
+</section>
+
+<!-- ─────────────────────────  GARGALO  ───────────────────────── -->
+<section class="section section--dark" id="gargalo">
+  <div class="sheet">
+    <p class="eyebrow eyebrow--inv"><span class="tick"></span>O gargalo</p>
+
+    <h2 class="h2 h2--inv">
+      O lead não some porque o marketing falhou.<br>
+      Some porque ninguém respondeu a tempo.
+    </h2>
+
+    <div class="cards">
+      <article class="card card--inv">
+        <h3 class="card__title">Fora do horário comercial</h3>
+        <p>Anúncio roda 24 horas. Equipe atende 8. A mensagem que chega às 21h espera até amanhã — e o concorrente que respondeu em dois minutos já marcou.</p>
+      </article>
+      <article class="card card--inv">
+        <h3 class="card__title">Tudo mora no WhatsApp de alguém</h3>
+        <p>Sem CRM, o histórico está no celular de uma pessoa. Quando ela sai de férias, o pipeline sai junto. Não dá pra medir o que não está registrado.</p>
+      </article>
+      <article class="card card--inv">
+        <h3 class="card__title">Agenda com buraco</h3>
+        <p>Consulta marcada não é consulta realizada. Sem confirmação ativa, o horário vazio já foi pago em mídia, em equipe e em estrutura.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────  ESTRUTURA  ───────────────────────── -->
+<section class="section" id="estrutura">
+  <div class="sheet">
+    <p class="eyebrow"><span class="tick"></span>A estrutura</p>
+    <h2 class="h2">Quatro fluxos, na ordem em que o lead atravessa.</h2>
+    <p class="section__lede">
+      Não é um chatbot. É a esteira inteira, montada no n8n, ligada ao seu
+      WhatsApp, ao seu CRM e à sua agenda. Cada fluxo entrega o lead pro próximo
+      com o contexto que já foi coletado.
+    </p>
+
+    <ol class="fluxos">
+      <li class="fluxo">
+        <span class="fluxo__n mono">Fluxo 01</span>
+        <h3 class="fluxo__t">Entrada e roteamento</h3>
+        <p>Recebe a mensagem, entende se é lead novo, paciente antigo ou fornecedor, e manda pro caminho certo. Áudio, imagem e documento entram junto — nada fica sem leitura.</p>
+      </li>
+      <li class="fluxo">
+        <span class="fluxo__n mono">Fluxo 02</span>
+        <h3 class="fluxo__t">Agentes de IA</h3>
+        <p>Um agente qualifica, um responde as dúvidas que se repetem todo dia e um agenda direto na sua agenda. Conversa, não formulário — e no tom que sua empresa usa.</p>
+      </li>
+      <li class="fluxo">
+        <span class="fluxo__n mono">Fluxo 03</span>
+        <h3 class="fluxo__t">Passagem pra pessoa certa</h3>
+        <p>Quando o caso pede humano, a IA sai de cena e entrega a conversa resumida pra sua equipe. Ninguém precisa rolar 80 mensagens pra entender o que o cliente quer.</p>
+      </li>
+      <li class="fluxo">
+        <span class="fluxo__n mono">Fluxo 04</span>
+        <h3 class="fluxo__t">Lembrete e confirmação</h3>
+        <p>Lembretes automáticos antes do compromisso, com confirmação de presença. Quem desmarca abre o horário a tempo de você preencher.</p>
+      </li>
+    </ol>
+
+    <div class="rail">
+      <p class="rail__t">E por cima de tudo: <strong>relatório</strong>.</p>
+      <p>Quantos leads entraram, quantos foram respondidos, em quanto tempo, quantos viraram agendamento e quantos apareceram. Chega no seu WhatsApp — você não precisa abrir dashboard nenhum pra saber se está funcionando.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────  PROCESSO  ───────────────────────── -->
+<section class="section section--tint" id="processo">
+  <div class="sheet">
+    <p class="eyebrow"><span class="tick"></span>Como entramos</p>
+    <h2 class="h2">Três etapas. Sem projeto de seis meses.</h2>
+
+    <ol class="steps">
+      <li class="step">
+        <span class="step__n mono">Etapa 01</span>
+        <h3 class="step__t">Diagnóstico</h3>
+        <p>Mapeamos como o lead entra hoje, onde ele para e quanto isso custa por mês. Você recebe o desenho da operação atual e a projeção do que muda — mesmo que decida não seguir com a gente.</p>
+      </li>
+      <li class="step">
+        <span class="step__n mono">Etapa 02</span>
+        <h3 class="step__t">Implementação</h3>
+        <p>Construímos os fluxos, integramos WhatsApp, CRM e agenda, treinamos os agentes com o seu jeito de atender e rodamos testes reais antes de ligar. Um cliente por vez, pra sair certo.</p>
+      </li>
+      <li class="step">
+        <span class="step__n mono">Etapa 03</span>
+        <h3 class="step__t">Operação</h3>
+        <p>A esteira roda e a gente cuida dela: monitoramento, ajuste de fluxo, atualização quando alguma API muda e relatório recorrente. Você opera, não administra automação.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ─────────────────────────  CASE  ───────────────────────── -->
+<section class="section" id="case">
+  <div class="sheet sheet--narrow">
+    <p class="eyebrow"><span class="tick"></span>Em produção</p>
+    <blockquote class="case">
+      <p class="case__q">
+        Uma clínica de geriatria em Belo Horizonte roda a esteira completa da
+        RoxOps desde março de 2026: atendimento, agendamento, confirmação e
+        pesquisa de satisfação, todos ligados ao WhatsApp da secretaria.
+      </p>
+      <footer class="case__f mono">
+        <span>Cliente ativo · 4 automações · desde 03/2026</span>
+      </footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ─────────────────────────  QUEM  ───────────────────────── -->
+<section class="section section--tint" id="quem">
+  <div class="sheet">
+    <p class="eyebrow"><span class="tick"></span>Para quem</p>
+    <h2 class="h2">Funciona melhor quando o volume dói.</h2>
+
+    <div class="fit">
+      <div class="fit__col">
+        <h3 class="fit__t fit__t--yes">Faz sentido se</h3>
+        <ul class="list">
+          <li>Chega mais mensagem por dia do que a equipe consegue responder bem.</li>
+          <li>A maior parte das vendas passa por WhatsApp.</li>
+          <li>Você já investe em mídia e sente que parte do lead esfria antes do contato.</li>
+          <li>Falta agenda cheia, não falta procura.</li>
+          <li>Você quer número na mão, não impressão.</li>
+        </ul>
+      </div>
+      <div class="fit__col">
+        <h3 class="fit__t fit__t--no">Não faz sentido se</h3>
+        <ul class="list list--muted">
+          <li>O volume de contatos ainda é pequeno o bastante pra uma pessoa dar conta.</li>
+          <li>Você procura um chatbot barato de prateleira.</li>
+          <li>Não há alguém do lado de dentro pra assumir o que a IA passar adiante.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────  CONTATO  ───────────────────────── -->
+<section class="section section--dark" id="contato">
+  <div class="sheet sheet--narrow">
+    <p class="eyebrow eyebrow--inv"><span class="tick"></span>Próximo passo</p>
+    <h2 class="h2 h2--inv h2--big">Comece pelo diagnóstico.</h2>
+    <p class="section__lede section__lede--inv">
+      Uma conversa de 30 minutos pra entender sua operação e mostrar onde o lead
+      está parando. Se não fizer sentido automatizar agora, a gente fala isso na
+      hora.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--light" href="mailto:contato@roxops.com.br?subject=Diagn%C3%B3stico%20RoxOps">Falar com a RoxOps</a>
+      <a class="btn btn--ghost btn--ghost-inv" href="#estrutura">Rever a estrutura</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="sheet foot__in">
+    <span class="mono">RoxOps · Automação e IA para operação comercial</span>
+    <span class="mono foot__dim">roxops.com.br</span>
+  </div>
+</footer>
+
+<script src="/script.js" defer></script>
+</body>
+</html>
