@@ -1,20 +1,20 @@
 /* ==========================================================================
-   RoxOps — folha de esquema
-   Direção: prancha técnica em violeta. Régua fina, marcações mono,
+   RoxOps — Folha de Esquema (Tema Deep Blue)
+   Direção: Prancha técnica em Azul Escuro e Ciano. Régua fina, marcações mono,
    um único elemento vivo (a esteira). Tudo o mais em silêncio.
    ========================================================================== */
 
 :root{
-  --paper:      #F1EFF6;
-  --paper-2:    #FFFFFF;
-  --tint:       #E9E5F4;
-  --ink:        #14121C;
-  --ink-2:      #4A4560;
-  --ink-deep:   #17122A;
-  --rox:        #5B21D6;
-  --rox-soft:   #C9BCF2;
-  --rox-line:   #D9D0F0;
-  --rox-glow:   #8B5CF6;
+  --paper:      #020813;
+  --paper-2:    #081026;
+  --tint:       #040a18;
+  --ink:        #f3f4f6;
+  --ink-2:      #94a3b8;
+  --ink-deep:   #020610;
+  --rox:        #0062ff;
+  --rox-soft:   #38bdf8;
+  --rox-line:   rgba(56, 189, 248, 0.16);
+  --rox-glow:   #00e5ff;
 
   --sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
   --disp: "Bricolage Grotesque", var(--sans);
@@ -40,8 +40,8 @@ body{
   overflow-x:hidden;
   /* malha de prancha: quase invisível, só dá textura de papel técnico */
   background-image:
-    linear-gradient(to right, rgba(91,33,214,.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(91,33,214,.045) 1px, transparent 1px);
+    linear-gradient(to right, rgba(56, 189, 248, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.035) 1px, transparent 1px);
   background-size:88px 88px;
 }
 
@@ -73,7 +73,7 @@ a{ color:inherit; }
   position:sticky; top:0; z-index:40;
   display:flex; align-items:center; gap:1.5rem;
   padding:.85rem var(--gut);
-  background:rgba(241,239,246,.86);
+  background:rgba(2, 8, 19, 0.86);
   backdrop-filter:blur(10px);
   border-bottom:var(--rule);
 }
@@ -100,12 +100,12 @@ a{ color:inherit; }
   text-decoration:none; border:1px solid var(--rox); border-radius:2px;
   transition:transform .16s ease, background .16s ease;
 }
-.btn:hover{ background:#4A17BA; transform:translateY(-1px); }
+.btn:hover{ background:#004ecc; transform:translateY(-1px); }
 .btn--sm{ padding:.55rem 1rem; font-size:.85rem; }
-.btn--ghost{ background:transparent; color:var(--rox); border-color:var(--rox-soft); }
-.btn--ghost:hover{ background:rgba(91,33,214,.06); }
+.btn--ghost{ background:transparent; color:var(--rox-soft); border-color:var(--rox-soft); }
+.btn--ghost:hover{ background:rgba(56, 189, 248, 0.08); }
 .btn--light{ background:#fff; color:var(--ink-deep); border-color:#fff; }
-.btn--light:hover{ background:#EDE9FB; }
+.btn--light:hover{ background:#e0f2fe; }
 .btn--ghost-inv{ color:#fff; border-color:rgba(255,255,255,.35); }
 .btn--ghost-inv:hover{ background:rgba(255,255,255,.1); }
 
@@ -162,7 +162,7 @@ a{ color:inherit; }
   background:var(--paper-2);
   border:var(--rule);
   border-radius:3px;
-  box-shadow:0 1px 0 rgba(91,33,214,.05), 0 18px 40px -30px rgba(20,18,28,.45);
+  box-shadow:0 1px 0 rgba(56, 189, 248, 0.05), 0 18px 40px -30px rgba(0,0,0,.75);
 }
 .flow__cap{
   display:flex; justify-content:space-between; align-items:center; gap:1rem;
@@ -170,7 +170,7 @@ a{ color:inherit; }
   border-bottom:var(--rule);
   color:var(--ink-2);
 }
-.flow__status{ color:var(--rox); }
+.flow__status{ color:var(--rox-soft); }
 .flow__status::before{
   content:""; display:inline-block; width:6px; height:6px; border-radius:50%;
   background:currentColor; margin-right:.5rem; vertical-align:middle;
@@ -194,7 +194,7 @@ a{ color:inherit; }
   height:var(--wire-h); width:calc(100% - 2.2rem);
   color:var(--rox-soft); overflow:visible;
 }
-.flow__pulse{ color:var(--rox); filter:drop-shadow(0 0 6px var(--rox-glow)); }
+.flow__pulse{ color:var(--rox-soft); filter:drop-shadow(0 0 6px var(--rox-glow)); }
 
 .flow__nodes{
   position:relative;
@@ -203,7 +203,7 @@ a{ color:inherit; }
 .node{ display:flex; flex-direction:column; align-items:center; text-align:center; gap:var(--node-gap,.55rem); }
 .node__id{
   display:block; height:var(--id-h,14px); line-height:var(--id-h,14px);
-  color:var(--rox-soft); transition:color .3s ease;
+  color:var(--ink-2); transition:color .3s ease;
 }
 .node__dot{
   width:var(--dot-h,15px); height:var(--dot-h,15px); border-radius:50%;
@@ -212,10 +212,10 @@ a{ color:inherit; }
 }
 .node__label{ font-size:.82rem; line-height:1.3; color:var(--ink-2); transition:color .3s ease; }
 
-.node.is-on .node__id{ color:var(--rox); }
+.node.is-on .node__id{ color:var(--rox-soft); }
 .node.is-on .node__dot{
-  background:var(--rox); border-color:var(--rox);
-  box-shadow:0 0 0 5px rgba(91,33,214,.13);
+  background:var(--rox-soft); border-color:var(--rox-soft);
+  box-shadow:0 0 12px var(--rox-glow), 0 0 0 5px rgba(56, 189, 248, 0.2);
   transform:scale(1.15);
 }
 .node.is-on .node__label{ color:var(--ink); font-weight:500; }
@@ -235,8 +235,8 @@ a{ color:inherit; }
 @media (prefers-reduced-motion:reduce){
   html{ scroll-behavior:auto; }
   .flow__pulse{ display:none; }
-  .node .node__dot{ background:var(--rox); border-color:var(--rox); }
-  .node .node__id{ color:var(--rox); }
+  .node .node__dot{ background:var(--rox-soft); border-color:var(--rox-soft); }
+  .node .node__id{ color:var(--rox-soft); }
   .btn:hover{ transform:none; }
 }
 
@@ -255,7 +255,7 @@ a{ color:inherit; }
 
 /* ── cartões do gargalo ─────────────────────────────────────────── */
 .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(255px,1fr)); gap:1px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.12); margin-top:2.6rem; }
-.card{ padding:1.9rem 1.6rem; background:var(--ink-deep); }
+.card{ padding:1.9rem 1.6rem; background:var(--paper-2); }
 .card__title{ font-family:var(--disp); font-weight:600; font-size:1.12rem; letter-spacing:-.015em; color:#fff; margin-bottom:.7rem; }
 .card p{ font-size:.95rem; margin:0; }
 
